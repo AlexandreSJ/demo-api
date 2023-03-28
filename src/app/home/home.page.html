@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">API TEST</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-button (click)="clearQuery()" color="danger">Limpar</ion-button>
+    <hr>
+    <ion-item fill="outline">
+      <ion-label position="floating">Digite aqui </ion-label>
+      <ion-input id="name" placeholder=". . ."></ion-input>
+    </ion-item>
+    <hr>
+    <ion-button (click)="showQuery()">Adicionar</ion-button>
+  </div>
+</ion-content>
